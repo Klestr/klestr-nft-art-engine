@@ -5,8 +5,6 @@
 To find out more please visit: [📺 YouTube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA) | [👄 Discord](https://discord.com/invite/qh6MWhMJDN) | [💬 Telegram](https://t.me/hashlipsnft) | [🐦 Twitter](https://twitter.com/hashlipsnft) | [ℹ️ Website](https://hashlips.online/HashLips)
 # Klestr Art Engine 🔥
 
-![](https://github.com/Klestr/hashlips_art_engine/blob/main/banner.png)
-
 Create generative art by using the canvas api and node js. Before you use the generation engine, make sure you have node.js(v10.18.0) installed.
 
 ## Installation 🛠️
@@ -192,7 +190,7 @@ The program will output all the images in the `build/images` directory along wit
   "dna": "d956cdf4e460508b5ff90c21974124f68d6edc34",
   "name": "#1",
   "description": "This is the description of your NFT project",
-  "image": "https://hashlips/nft/1.png",
+  "image": "https://klish3.com/nft/1.png",
   "edition": 1,
   "date": 1731990799975,
   "attributes": [
