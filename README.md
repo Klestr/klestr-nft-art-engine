@@ -1,21 +1,8 @@
-# Welcome to Klestr 👄
 
-![](https://github.com/Klestr/hashlips_art_engine/blob/main/logo.png)
+#### Built from the lekker work by Mnr Hashlips 🇿🇦
 
-All the code in these repos was created and explained by Klestr on the main YouTube channel.
 
-To find out more please visit:
-
-[📺 YouTube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA)
-
-[👄 Discord](https://discord.com/invite/qh6MWhMJDN)
-
-[💬 Telegram](https://t.me/hashlipsnft)
-
-[🐦 Twitter](https://twitter.com/hashlipsnft)
-
-[ℹ️ Website](https://hashlips.online/Klestr)
-
+To find out more please visit: [📺 YouTube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA) | [👄 Discord](https://discord.com/invite/qh6MWhMJDN) | [💬 Telegram](https://t.me/hashlipsnft) | [🐦 Twitter](https://twitter.com/hashlipsnft) | [ℹ️ Website](https://hashlips.online/HashLips)
 # Klestr Art Engine 🔥
 
 ![](https://github.com/Klestr/hashlips_art_engine/blob/main/banner.png)
@@ -27,24 +14,32 @@ Create generative art by using the canvas api and node js. Before you use the ge
 If you are cloning the project then run this first, otherwise you can download the source code on the release page and skip this step.
 
 ```sh
-git clone https://github.com/Klestr/hashlips_art_engine.git
+git clone https://github.com/Klestr/klestr-nft-art-engine.git | SSH: git@github.com:Klestr/klestr-nft-art-engine.git | GITHUBCLI: gh repo clone Klestr/klestr-nft-art-engine
+
+[ yarn | npm ] install
 ```
 
-Go to the root of your folder and run this command if you have yarn installed.
-
-```sh
-yarn install
-```
-
-Alternatively you can run this command if you have node installed.
-
-```sh
-npm install
-```
+TODO:
+1.  TS the shit out of this 
+2.  process diagram of steps to create an NFT
 
 ## Usage ℹ️
 
-Create your different layers as folders in the 'layers' directory, and add all the layer assets in these directories. You can name the assets anything as long as it has a rarity weight attached in the file name like so: `example element#70.png`. You can optionally change the delimiter `#` to anything you would like to use in the variable `rarityDelimiter` in the `src/config.js` file.
+Create your different layers as folders in the 'layers' directory, and add all the layer assets in these directories. 
+You can name the assets anything as long as it has a rarity weight attached in the file name like so: `example element#70.png`. 
+
+Format:
+1. filename
+2. '#' <----- Start of rarityDelimiter
+3. number <----- The rarityDelimiter
+4. .png (image extension) <---- Start of rarityDelimiter
+
+eg.
+{filename}#{number}.png = rarityDelimiter
+
+You can optionally change the delimiter `#` to anything you would like to use in the variable `rarityDelimiter` in the `src/config.js` file.
+
+
 
 Once you have all your layers, go into `src/config.js` and update the `layerConfigurations` objects `layersOrder` array to be your layer folders name in order of the back layer to the front layer.
 

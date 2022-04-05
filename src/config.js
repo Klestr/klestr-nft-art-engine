@@ -13,7 +13,7 @@ const baseUri = "ipfs://NewUriToReplace";
 const solanaMetadata = {
   symbol: "CB", // NFT Prefix Acronym
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://github.com/Klestr",
   creators: [ // Fund distribbution 
     {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
@@ -31,7 +31,7 @@ const solanaMetadata = {
 /*
  Eth iterates 1 + 
  Sol iterates 0 + <- normal array 
-If you have selected Solana then the collection starts from 0 automatically
+ If you have selected Solana then the collection starts from 0 automatically
 
 
 Eg.
