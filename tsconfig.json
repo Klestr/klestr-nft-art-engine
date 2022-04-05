@@ -1,0 +1,25 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "compilerOptions": {
+        "allowJs": false,
+        "module": "CommonJS",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "moduleResolution": "classic",
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "outDir": "built/",
+        "baseUrl": "src/",
+        "target": "ES6",
+        "watch": true,
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./**/*.spec.ts"
+    ]
+}
