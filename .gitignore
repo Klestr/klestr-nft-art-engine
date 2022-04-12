@@ -50,6 +50,7 @@ build/Release
 # Dependency directories
 
 build/
+built/
 layers/
 dist/
 node_modules/

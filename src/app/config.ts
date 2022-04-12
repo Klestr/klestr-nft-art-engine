@@ -1,16 +1,16 @@
 const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
-const { NETWORK } = require(`${basePath}/constants/network.js`);
+import { NETWORK } from `./constants/network`);
 
 // const network = NETWORK.eth;
-const network = NETWORK.sol;
+export const network = NETWORK.sol;
 
 // General metadata for Ethereum & Sol
-const namePrefix = "Cheese Boys";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+export const namePrefix = "Cheese Boys";
+export const description = "Remember to replace this description";
+export const baseUri = "ipfs://NewUriToReplace";
 
-const solanaMetadata = {
+export const solanaMetadata = {
   symbol: "CB", // NFT Prefix Acronym
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://github.com/Klestr",
@@ -18,10 +18,7 @@ const solanaMetadata = {
     {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
       share: 50, // all creators share needs to add up to 100 
-    },
-  ],
-  creators: [ // Fund distribbution 
-    {
+    }, {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjssEjEnPN4",
       share: 50, // all creators share needs to add up to 100 
     },
@@ -40,7 +37,7 @@ Created edition: 0, with DNA: 2214750725e427806ee97a1510f514475056fce7
 Eth
 Created edition: 1, with DNA: 8fddd59504b487f8e3c563f08d78b4d3bc644c03
 */
-const layerConfigurations = [
+export const layerConfigurations = [
   {
     growEditionSizeTo: 15, // number of NFT to Generate 
     layersOrder: [
@@ -55,24 +52,24 @@ const layerConfigurations = [
   },
 ];
 
-const shuffleLayerConfigurations = false;
+export const shuffleLayerConfigurations = false;
 
-const debugLogs = false;
+export const debugLogs = false;
 
-const format = {
+export const format = {
   width: 512,
   height: 512,
   smoothing: false,
 };
 
-const gif = {
+export const gif = {
   export: false,
   repeat: 0,
   quality: 100,
   delay: 500,
 };
 
-const text = {
+export const text = {
   only: false,
   color: "#ffffff",
   size: 20,
@@ -85,31 +82,31 @@ const text = {
   spacer: " => ",
 };
 
-const pixelFormat = {
+export const pixelFormat = {
   ratio: 2 / 128,
 };
 
-const background = {
+export const background = {
   generate: true,
   brightness: "80%",
   static: false,
   default: "#000000",
 };
 
-const extraMetadata = {};
+export const extraMetadata = {};
 
 const rarityDelimiter = "#";
 
-const uniqueDnaTorrance = 10000;
+export const uniqueDnaTorrance = 10000;
 
-const preview = {
+export const preview = {
   thumbPerRow: 5,
   thumbWidth: 50,
   imageRatio: format.height / format.width,
   imageName: "preview.png",
 };
 
-const preview_gif = {
+export const preview_gif = {
   numberOfImages: 10, // number of NFT to Generate 
   order: "ASC", // ASC, DESC, MIXED
   repeat: 0,
